@@ -28,7 +28,7 @@
   ([results start errs]
    (process-results results start errs {:warnings nil}))
   ([results start errs warns]
-   (log/trace "Got granule-links:" (vec (:data-files results)))
+   (log/trace "Got granule-links:" (vec (:granule-links results)))
    (log/trace "Process-results tag-data:" (:tag-data results))
    (if errs
      (do
